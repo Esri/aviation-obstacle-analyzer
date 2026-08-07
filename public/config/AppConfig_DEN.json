@@ -1,0 +1,49 @@
+{
+    "PORTAL_URL": "https://fdwarcgis101.flydenver.com/arcgis",
+    "APP_ID": "gROjJ820UrPsplG2",
+    "ELEVATION_LAYER_URL": "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",
+    "gpUrl": "https://fdwarcgis102.flydenver.com/server/rest/services/AnalyzeRunwayObstacles_TEST/GPServer/Analyze%20Runway%20Obstacles",
+    "sceneItemID": "dface5e66fe844b2ae95c075cf1c01f2",
+    "themingUserConfig": {
+        "logo": {
+            "path": "src/assets/DEN_TEAM_LOGO_WHITE.png",
+            "altText": "DEN Logo"
+        },
+        "colorPalette": {
+            "brandColor": "#440099",
+            "passIndicator": "#5EF39C",
+            "failIndicator": "#FF808C"
+        },
+        "font": {
+            "fontFamily": "Colfax",
+            "fontColor": "#54585a"
+        }
+    },
+    "displayUnitConfig": {
+        "unitSwitcher": "off",
+        "units": "feet"
+    },
+    "arrSceneLayersUserConfig": [
+        {
+            "title": "GIS_ObstructionIdSurface_AppWeb_1",
+            "surfaceFriendlyNameField": "NAME",
+            "surfaceUnfriendlyNameField": "DESCRIP"
+        }
+    ],
+    "LAYER_NAMES": {
+        "GROUP_LAYER_MARKERS": "Markers Group",
+        "PENDING_MARKER": "My Marker",
+        "OBSTACLE_MARKERS": "Obstacle 2D Markers",
+        "OBSTACLE_PILLARS": "Obstacle Pillars",
+        "OBSTACLE_PILLARS_PENETRATES": "Penetrating Obstacle Pillars",
+        "OBSTACLE_LABELS": "Obstacle Labels",
+        "USER_INPUT_OBSTACLE_POINTS": "User Input Obstacle Points"
+    },
+    "ANALYSIS_STATUS": {
+        "DONE": "Analyzed",
+        "NOT_DONE": "Not Analyzed",
+        "FAILED": "FAILED",
+        "IN_PROGRESS": "In Progress",
+        "STARTING": "Starting"
+    }
+}

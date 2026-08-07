@@ -1,0 +1,171 @@
+/*
+ * Copyright 2026 Esri
+ *
+ * Licensed under the Apache License Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* #region ========================= IMPORTS ===================================*/
+/* #region ---------------------- 3rd-Party Styles -----------------------------*/
+@import "https://js.arcgis.com/4.32/@arcgis/core/assets/esri/themes/light/main.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/600.css";
+
+/* #endregion ------------------- 3rd-Party Styles -----------------------------*/
+
+/* #region ---------------------- Custom Styles --------------------------------*/
+/* #endregion ------------------- Custom Styles --------------------------------*/
+/* #endregion ====================== IMPORTS ===================================*/
+
+/* #region ====================== EXPORTED RULES ===============================*/
+/* #region ------------------------ CSS Reset ----------------------------------*/
+*,
+*::after,
+*:not([class^="esri-icon-"], [class*=" esri-icon-"])::before {
+  /* --- Sizing / Box-Model ---
+    Note: not setting outline to 0 because browser defaults for focus rings are 
+    important for accessibility
+    */
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  /*Include margin, padding, border in calculation of width & height*/
+  box-sizing: border-box;
+
+  /* --- Decorative - Typography --- */
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+
+  /* --- Decorative - Palette --- */
+  --light-purple: #8c79d0;
+  --gray: #6a6a6a;
+  --border: #d4d1df;
+  --borderer: #8d86a5;
+}
+
+html,
+body,
+#root {
+  /* --- Sizing / Box-Model --- 
+    Need to define width, height in units (not %) on highest-level elements 
+    so that all other elements can inherit sizes & use percentages
+    */
+
+  width: 100vw;
+  overflow-x: hidden;
+  /* --vh: see style-utils */
+  height: calc(var(--vh, 1vh) * 100);
+
+  /* --- Decorative - Typography ---
+    Properties to prevent unnecessary tracking, render sharp text
+    */
+  font-family:
+    var(--app-font-family, "Inter", system-ui, "Avenir", Helvetica, Arial, sans-serif);
+  --calcite-font-family:
+    var(--app-font-family, "Inter", system-ui, "Avenir", Helvetica, Arial, sans-serif);
+  font-feature-settings: "kern";
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+
+  scroll-behavior: smooth;
+}
+
+/* TODO: are we still using this color scheme setting? */
+:root {
+  color-scheme: light;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.container--bottom {
+  width: 100px;
+}
+.calcite-alert {
+  width: 100px;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* JS SDK Overrides */
+
+/* .arcgis-placement__container {
+  box-shadow: none !important;
+} */
+
+@media (min-width: 1600px) {
+  #grid-container {
+    width: 680px;
+  }
+
+  * {
+    --calcite-shell-panel-width: 680px;
+    --calcite-shell-panel-max-width: 680px;
+  }
+}
+
+#add-data-panel {
+  --calcite-font-size-0: 14px;
+  --calcite-font-weight-medium: 600;
+  --calcite-color-text-1: var(--text-color);
+}

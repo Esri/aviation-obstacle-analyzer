@@ -1,0 +1,59 @@
+{
+  "PORTAL_URL": "https://jctest2.esri.com/portal",
+  "APP_ID": "PEjERwhm7hJUFM2E",
+  "ELEVATION_LAYER_URL": "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",
+  "gpUrl": "https://jctest2.esri.com/hosting/rest/services/AnalyzeRunwayObstacles/GPServer/Analyze%20Runway%20Obstacles",
+  "sceneItemID": "0dbed1bc39e74f62a4cbb62e9dd5a697",
+  "themingUserConfig": {
+    "logo": {
+      "path": "src/assets/arcgis-aviation-airports-220.png",
+      "altText": "Brand Logo"
+    },
+    "colorPalette": {
+      "brandColor": "#007AC2",
+      "passIndicator": "#5EF39C",
+      "failIndicator": "#FF808C"
+    },
+    "font": {
+      "fontFamily": "Inter",
+      "fontColor": "#141414"
+    }
+  },
+  "displayUnitConfig": {
+    "unitSwitcher": "off",
+    "units": "feet"
+  },
+  "arrSceneLayersUserConfig": [
+    {
+      "title": "Sample_OIS_SDE",
+      "surfaceFriendlyNameField": "NAME",
+      "surfaceUnfriendlyNameField": "DESCRIP"
+    }
+  ],
+  "LAYER_NAMES": {
+    "GROUP_LAYER_MARKERS": "Markers Group",
+    "PENDING_MARKER": "My Marker",
+    "OBSTACLE_MARKERS": "Obstacle 2D Markers",
+    "OBSTACLE_PILLARS": "Obstacle Pillars",
+    "OBSTACLE_PILLARS_PENETRATES": "Penetrating Obstacle Pillars",
+    "OBSTACLE_LABELS": "Obstacle Labels",
+    "USER_INPUT_OBSTACLE_POINTS": "User Input Obstacle Points"
+  },
+  "ANALYSIS_STATUS": {
+    "DONE": "Analyzed",
+    "NOT_DONE": "Not Analyzed",
+    "FAILED": "FAILED",
+    "IN_PROGRESS": "In Progress",
+    "STARTING": "Starting"
+  },
+  "SURFACE_SORT_METHODS": {
+    "BY_OBS_DELTA_Z": {
+      "label": "Delta Z",
+      "field": "obsDeltaZ"
+    },
+    "BY_RUNWAY_NAME": {
+      "label": "Runway Name",
+      "field": "runwayName"
+    }
+  }
+}

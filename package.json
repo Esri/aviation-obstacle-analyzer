@@ -1,0 +1,42 @@
+{
+  "name": "obstacle-analysis",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "dev:den": "vite --mode den",
+    "build:den": "vite build --mode den",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@arcgis/core": "^4.32.10",
+    "@arcgis/map-components": "^4.32.14",
+    "@esri/calcite-components": "^3.2.1",
+    "@esri/calcite-components-react": "^3.2.1",
+    "@fontsource/inter": "^5.2.6",
+    "arcgis": "^1.0.2",
+    "papaparse": "^5.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "styled-components": "^6.1.19",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "prettier": "3.6.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
