@@ -4,7 +4,10 @@ An ArcGIS-based application for analyzing runway obstacles and evaluating their 
 
 Built with Vite, React, and the ArcGIS Maps SDK for JavaScript, the app renders a 3D Web Scene of Obstacle Identification Surfaces (OIS) and lets users add obstacle points by drawing on the map or uploading a CSV. It runs the `Analyze Runway Obstacles` geoprocessing tool against those surfaces to determine which obstacles penetrate them and by how much. Results are visualized in the scene and can be reviewed in detail and exported to CSV or Excel for reporting.
 
+[View it live](https://esrips.github.io/obstacle-analysis/)
+
 ![alt text](ObsEvalScreenshot.png)
+
 ---
 
 ## Development & Deployment
@@ -14,6 +17,10 @@ in a new environment — including publishing data layers, creating the Web Scen
 publishing the GP web tool, registering OAuth, configuring `AppConfig.json`,
 building, and deploying the static site — see
 [DEVELOP_AND_DEPLOY.md](DEVELOP_AND_DEPLOY.md).
+
+## Issues
+
+Find a bug or want to request a new feature?  Please let us know by submitting an issue.
 
 ## Contributing
 
